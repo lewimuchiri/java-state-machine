@@ -1,5 +1,6 @@
 plugins {
-    id("app-base")
+    java
+    id("io.freefair.lombok") version "8.11"
     id("test-suites")
 }
 
