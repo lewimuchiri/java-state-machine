@@ -8,10 +8,10 @@ It comprises a finite set of states and reacts to inputs so that it can transiti
 3. `Event` - The input that causes the entity to transition to a new state
 4. `Guard` - A condition that must be met in order for the entity to transition to a new state
 
-The Javakit state machine enables you to define a finite set of states and events, and then define the rules that determine how the entity transitions from one state to another.  
+The state machine enables you to define a finite set of states and events, and then define the rules that determine how the entity transitions from one state to another.  
 It also enables you to query the current state of the state machine at any given time, and to send an event to the state machine, which causes the entity to transition to a new state.
 
-## Getting Started with the Javakit State Machine
+## Getting Started with the Java State Machine
 For basic usage of this state machine, you are to proceed as follows:  
 1. Define an enum class containing the states of your state machine
 2. Define an enum class containing the events that will trigger the transitions from one state to another
@@ -85,7 +85,7 @@ You can also override the default guard to implement your own logic.
 **NOTE**
 The `populateAllowedTransitions()` method is called in the constructor to derive the "allowed transitions" from the defined event rules. This enables you to call methods such as `isValidTransition(...)` and know if a transition is valid.
 
-### 4. Using the Javakit State Machine
+### 4. Using the State Machine
 Once the event rules and allowed transitions have been defined, you can now send events to the state machine and query its current state.
 
 ```java
