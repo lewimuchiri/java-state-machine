@@ -36,7 +36,7 @@ testing {
             }
             sources {
                 java {
-                    setSrcDirs(listOf("src/test/unit-test/java"))
+                    setSrcDirs(listOf("src/test/java"))
                 }
             }
         }
